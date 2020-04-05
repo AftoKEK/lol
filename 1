@@ -1,0 +1,45 @@
+from time import sleep
+import random
+um_hp = 7 #хп некромана
+um_da = ('урона нет зависит от духа') #дамаг некромана 
+um_lo = 16 #ловкость некромана
+
+ul_hp = 9999999 #хп лучника
+ul_da = 6 #дамаг лучника
+
+print('Привет игрок')
+name = input("Напишите ваш ник:")
+print('Вас завут: ' + name )
+sleep(0.9) # Time in seconds.
+print(name+ ' у вас есть 10 классов первосанажей выберайте ')
+sleep(0.3) # Time in seconds.
+print('Некроман')
+sleep(0.3) # Time in seconds.
+print('Механик')
+sleep(0.3) # Time in seconds.
+print('Киборг')
+sleep(0.3) # Time in seconds.
+y=input('На какой класс взор уткнулся')
+if(y=='Некроман'):
+    print('Хороший выбор')
+    print('Хп: ',um_hp )
+    print('Дамаг: ',um_da)
+    print('Ловкость',um_lo)
+    print('Ульта-вызов умершей нежести с некотором шансом   ')
+    sleep(4.3)
+    print('Твоя цель: Заполучить сильнешего из нежести ')
+    sleep(2.0)
+    print('У тебя есть шанс получить рандомнаго духа из 4 духов')
+    print('Обычный зомби')
+    print('Лучник')
+    print('Голем')
+    print('Рыцарь ')
+    sleep(6.0)
+    print('3')
+    sleep(1.0)
+    print('2')
+    sleep(1.0)
+    print('1')
+    strings =["Лучник", "Обычный зомби","Голем","Рыцарь"]
+    y=input(random.choice(strings))
+  
